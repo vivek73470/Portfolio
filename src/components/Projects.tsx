@@ -29,6 +29,33 @@ const Projects = () => {
             ],
         },
         {
+            title: 'Tech Truckers',
+            description:
+                'Developed a responsive Product showcase website for Tech Truckers using React.js, MUI & Tailwind CSS. Highlighting key features of web and mobile Apllication with optimized UI/UX & performance',
+            tech: ['React.js', 'Javascript', 'Rest APIs', 'MUI'],
+            link: 'https://techtruckers.com/',
+            highlights: [
+                'End-to-end dispatch and load management system for logistics operations',
+                'Real-time tracking and fleet monitoring for improved visibility',
+                'Driver compliance and operational workflow management features',
+                'Dynamic, API-driven dashboards for live logistics data',
+            ],
+        },
+        {
+            title: 'Big Wings',
+            description:
+                'Developed a responsive web platform for a logistics and supply chain management company, enabling businesses to manage freight operations with real-time visibility and streamlined coordination. The platform focuses on transportation management, shipment tracking, and efficient handling of diverse cargo including refrigerated goods, fresh produce, and general freight, delivering a seamless and data-driven user experience.',
+            tech: ['React.js', 'JavaScript', 'REST APIs', 'MUI'],
+            link: 'https://bigwings.us/',
+            highlights: [
+                'Transportation and freight management system with real-time visibility',
+                'Support for diverse logistics operations including refrigerated and general cargo',
+                'Streamlined shipment tracking and supply chain coordination',
+                'API-driven data integration for dynamic logistics workflows',
+                'Responsive and intuitive UI for operational efficiency across devices',
+            ],
+        },
+        {
             title: 'ShopFusion',
             description:
                 'Independently developed a full-stack e-commerce application with secure login, product browsing, cart features, and admin panel. Implemented MVC architecture with clear controllers, services, and routes.',
