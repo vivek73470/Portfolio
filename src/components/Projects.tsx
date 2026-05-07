@@ -111,14 +111,14 @@ const Projects = () => {
     ];
 
     return (
-        <section id="projects" className="py-24 bg-white">
+        <section id="projects" className="py-24 bg-[#0d121b]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-                        Featured <span className="text-rose-600">Projects</span>
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                        Featured <span className="text-indigo-300">Projects</span>
                     </h2>
-                    <div className="w-20 h-1 bg-rose-500 mx-auto mb-4"></div>
-                    <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+                    <div className="w-20 h-1 bg-indigo-400 mx-auto mb-4"></div>
+                    <p className="text-[#9c9c9d] text-lg max-w-2xl mx-auto">
                         Here are some of my recent projects showcasing my expertise in building
                         scalable and user-focused applications
                     </p>
@@ -128,11 +128,11 @@ const Projects = () => {
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-lg overflow-hidden border border-rose-100 hover:border-rose-300 transition-all duration-300 hover:transform hover:scale-105 group shadow-sm"
+                            className="bg-[#141824] rounded-2xl overflow-hidden border border-white/10 hover:border-indigo-300/40 transition-all duration-300 hover:-translate-y-1 group shadow-sm hover:shadow-indigo-500/10"
                         >
-                            <div className="p-6 space-y-4">
+                            <div className="p-6 space-y-5">
                                 <div className="flex justify-between items-start">
-                                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-rose-600 transition-colors">
+                                    <h3 className="text-2xl font-bold text-white group-hover:text-indigo-200 transition-colors pr-3">
                                         {project.title}
                                     </h3>
                                     {project.link && (
@@ -140,34 +140,34 @@ const Projects = () => {
                                             href={project.link}
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="text-rose-600 hover:text-rose-500 transition-colors"
+                                            className="text-indigo-300 hover:text-indigo-200 transition-colors"
                                         >
                                             <ExternalLink size={20} />
                                         </a>
                                     )}
                                 </div>
 
-                                <p className="text-slate-600 leading-relaxed">{project.description}</p>
+                                <p className="text-[#9c9c9d] leading-relaxed line-clamp-4">{project.description}</p>
 
                                 <div className="space-y-3">
-                                    <h4 className="text-sm font-semibold text-rose-600 uppercase tracking-wide">
+                                    <h4 className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-bold text-white uppercase tracking-[0.16em]">
                                         Key Highlights
                                     </h4>
                                     <ul className="space-y-2">
                                         {project.highlights.map((highlight, idx) => (
-                                            <li key={idx} className="text-slate-600 text-sm flex items-start">
-                                                <span className="text-rose-600 mr-2">▹</span>
+                                            <li key={idx} className="text-[#9c9c9d] text-sm flex items-start">
+                                                <span className="text-[#b4b4b6] mr-2">▹</span>
                                                 {highlight}
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
 
-                                <div className="flex flex-wrap gap-2 pt-4 border-t border-rose-100">
+                                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/10">
                                     {project.tech.map((tech) => (
                                         <span
                                             key={tech}
-                                            className="px-3 py-1 bg-rose-50 text-rose-700 rounded-full text-xs font-medium"
+                                            className="px-3 py-1 bg-[#0f1420] text-[#b4b4b6] rounded-full text-xs font-medium border border-white/10"
                                         >
                                             {tech}
                                         </span>
@@ -183,7 +183,7 @@ const Projects = () => {
                         href="https://github.com/vivek73470"
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center px-6 py-3 bg-white hover:bg-rose-500 text-slate-700 hover:text-white rounded-lg font-medium transition-all duration-300 border border-rose-100 hover:border-rose-300 shadow-sm"
+                        className="inline-flex items-center px-6 py-3 bg-[#141824] hover:bg-indigo-400 text-[#9c9c9d] hover:text-white rounded-lg font-medium transition-all duration-300 border border-white/10 hover:border-indigo-300/50 shadow-sm"
                     >
                         <Github className="mr-2" size={20} />
                         View More on GitHub
