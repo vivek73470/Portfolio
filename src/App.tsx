@@ -8,7 +8,7 @@ import Projects from './components/Projects'
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#fef2f2]">
+    <div className="min-h-screen bg-[#07080a]">
       <Navbar />
       <Hero />
       <About />
